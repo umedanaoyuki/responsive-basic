@@ -25,3 +25,60 @@ li {
   list-style: none;
   font-size: 1.2rem;
 }
+
+.site-title {
+  line-height: 1px;
+  font-weight: 600;
+  font-size: 2.4rem;
+}
+
+.site-title a {
+  color: #24292e;
+}
+
+/* ヘッダー */
+#header {
+  max-width: 960px;
+  /* 親タグに対してflexを使用すると、子要素が横並びになる */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 0 4%;
+  height: 170px;
+}
+
+#header ul {
+  display: flex;
+  padding: 10px 0;
+}
+
+#header ul li {
+  font-size: 0.9rem;
+  margin-left: 30px;
+}
+
+#header ul li a {
+  color: #24292e;
+  transition: all 0.3s;
+}
+
+#header ul li a:hover {
+  opacity: 0.5;
+}
+
+#header li img.icon {
+  width: 30px;
+  align-items: center;
+}
+
+/* sp */
+@media screen and (max-width: 600px) {
+  /* header */
+  #header {
+    flex-direction: column;
+    height: auto;
+    line-height: 40px;
+    margin-top: 20px;
+  }
+}
